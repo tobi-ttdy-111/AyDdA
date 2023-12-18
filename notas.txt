@@ -1,0 +1,58 @@
+
+/// MDB_practica3
+
+>>> Merge-Sort:
+CT: O(n log n)
+CE: O(n)
+
+>>> Quick-Sort:
+CT: O(n log n) promedio, O(n^2) peor caso
+CE: O(log n)
+
+??? pruebas:
+Quick sort: rapido en tamaños pequeños
+Merge sort: mas eficiente que el otro en tamaños grandes
+
+
+/// MDB_Practica4
+
+>> Búsqueda del Max-Min Recursivo:
+CT: O(n) en el peor caso
+CE: O(log n) debido a la recursion
+
+>> Búsqueda del Max-Min Iterativo:
+CT: O(n) en el peor caso
+CE: O(1) ya que no usa espacio aunque varie la entrada
+
+>> Suma Máxima (Recursivo):
+CT: O(n log n) en el peor caso
+CE: O(log n) debido a la recursión
+
+>> Suma Máxima (Kadane)
+CT: O(n) en el peor caso
+CE: O(1)
+
+??? pruebas:
+( busqueda max-min ) ambos son efectivos en tiempos de ejecucion, pero entre mayor es la entrada el iterativo destaca mas
+( general ) los enfoques iterativos tienden a ser preferibles para conjuntos de datos más grandes, mientras que los recursivos suelen ser poco mas eficazes para tamaños de entrada cortos
+
+
+/// MDB_Practica5
+
+>> Mochila Fraccionada (Limitadas):
+CT: O(n log n) debido a la clasificacion de elementos
+CE: O(n) por el almacenamiento de la informacion
+
+>> Mochila Fraccionada (Ilimitadas):
+CT: O(nW), donde n es el número de elementos y W es la capacidad de la mochila.
+CE: O(W) para almacenar la tabla de programación dinámica.
+
+??? pruebas:
+( fuerza bruta ) ambos algoritmos (Ilimitadas/limitadas) ofrencen un enfoque eficiente para el problema, en comparacion a la fuerza bruta, ya que en la fuereza bruta hay mucha recalculación
+( tamaño de entrada ) la eficiencia de estos algoritmos se vuelve mas evidente a medida que el tamaño de la entrada aumenta
+
+
+>> Huffman:
+CT: O(n log n) para construir el árbol de Huffman
+CE: O(n) para almacenar la cola de prioridad durante la construccion del arbol
+
